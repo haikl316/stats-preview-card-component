@@ -1,15 +1,17 @@
 .background-layer {
     width: 1440px;
+    height: 800px;
     background-color: hsl(233, 47%, 7%);
-    padding: 100px 0;
 }
 
 .foreground-layer {
     width: 1080px;
-    margin: 0 auto;
+    height: 446px;
+    margin: auto;
     background-color: hsl(244, 38%, 16%);
     position: relative;
-    border-radius: 3%;
+    border-radius: 10px;
+    top: 177px;
 }
 .text-box {
     display: inline-block;
@@ -23,10 +25,23 @@
 }
 
 .image-box {
-    position: absolute;
-    margin: 0;
-    border: 0;
+    position: relative;
     display: inline-block;
+    left: 540px;
+    bottom: 446px;
+}
+
+.image-box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(277, 64%, 61%, .7);
+    mix-blend-mode: multiply;
+    border-radius: 0 10px 10px 0;
+
 }
 
 .heading {
@@ -72,7 +87,7 @@ h5 {
     color: hsl(277, 64%, 61%);
 }
 
-img {
-    box-shadow: inset 0 0 0 1000px hsl(0, 0%, 0%);
-    border-radius: 2%;
+.three-women-image {
+    border-radius: 0 10px 10px 0;
 }
+
