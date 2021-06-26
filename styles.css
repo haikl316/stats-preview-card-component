@@ -1,0 +1,93 @@
+.background-layer {
+    width: 1440px;
+    height: 800px;
+    background-color: hsl(233, 47%, 7%);
+}
+
+.foreground-layer {
+    width: 1080px;
+    height: 446px;
+    margin: auto;
+    background-color: hsl(244, 38%, 16%);
+    position: relative;
+    border-radius: 10px;
+    top: 177px;
+}
+.text-box {
+    display: inline-block;
+    height: 446px;
+    width: 540px;
+}
+
+.main-heading {
+    padding: 50px 50px 0 50px;
+    margin-top: 0;
+}
+
+.image-box {
+    position: relative;
+    display: inline-block;
+    left: 540px;
+    bottom: 446px;
+}
+
+.image-box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(277, 64%, 61%, .7);
+    mix-blend-mode: multiply;
+    border-radius: 0 10px 10px 0;
+
+}
+
+.heading {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+h1 {
+    padding: 70px 75px 0 50px;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+h5 {
+    margin: 0;
+}
+.main-paragraph {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    padding: 15px 100px 0px 50px;
+    line-height: 1.5;
+}
+
+.stats-text {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.6);
+    size: 15px;
+}
+
+.table {
+    position: relative;
+    margin: 75px auto 50px 50px;
+}
+
+.highlighted-text {
+    color: hsl(277, 64%, 61%);
+}
+
+.three-women-image {
+    border-radius: 0 10px 10px 0;
+}
+
